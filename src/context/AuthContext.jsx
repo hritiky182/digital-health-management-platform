@@ -34,7 +34,7 @@ export function AuthProvider({ children }) {
   const login = (email, password) => {
     // Look up user by email in fictional user roles or default to physician
     const matchedRole = USER_ROLES.find(r => r.userEmail.toLowerCase() === email.trim().toLowerCase()) ||
-                        USER_ROLES.find(r => r.id === 'physician');
+      USER_ROLES.find(r => r.id === 'physician');
 
     const token = `careaxis_sess_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`;
     localStorage.setItem(AUTH_TOKEN_KEY, token);
@@ -111,7 +111,7 @@ export function AuthProvider({ children }) {
         facility: 'Demonstration Console',
         ipAddress: '127.0.0.1 (Local Client)',
         status: 'SUCCESS',
-        details: `Simulated role switch in demo environment to ${role.badge}.`
+        details: `Simulated role switch in environment to ${role.badge}.`
       });
     }
   };

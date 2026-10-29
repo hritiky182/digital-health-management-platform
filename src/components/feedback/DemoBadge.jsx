@@ -34,7 +34,7 @@ export function DemoBadge() {
             display: 'inline-block'
           }}
         />
-        <span>DEMO ENVIRONMENT</span>
+        {/* <span>DEMO ENVIRONMENT</span> */}
         {isOfflineMode && <span style={{ color: '#b91c1c', fontWeight: 700 }}>• OFFLINE</span>}
       </button>
 
