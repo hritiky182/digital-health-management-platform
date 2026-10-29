@@ -120,7 +120,7 @@ export function LoginPage() {
       }}
     >
       <div style={{ width: '100%', maxWidth: '920px' }}>
-        
+
         {/* Brand Header */}
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <div
@@ -146,7 +146,7 @@ export function LoginPage() {
             Digital Health Management Platform
           </p>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginTop: '0.5rem' }}>
-            <Badge variant="teal">Demo Sandbox Environment</Badge>
+            {/* <Badge variant="teal">Demo Sandbox Environment</Badge> */}
             <Badge variant="blue">National eHealth Suite</Badge>
           </div>
         </div>
